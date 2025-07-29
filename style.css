@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: #F2D7EE;
+}
+
+h1{
+    background-color: #0E103D;
+    color: white;
+    height: 8vh;
+    line-height: 3.5rem;
+}
+
+
+.choice{
+    height: 10rem;
+    width: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.choice:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+#rock{
+    background-image: url(rock.png);
+}
+#paper{
+    background-image: url(paper.png);
+}
+#scissors{
+    background-image: url(scissor.png);
+}
+
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+
+.sc-ms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score-board{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    gap: 5rem;
+    background-color: #e4a5ee;
+    border: 1px solid rgb(158, 96, 216);
+}
+#comp-score
+#user-score{
+    font-size: 4rem;;
+}
+#user{
+    padding-left: 2rem;
+}
+#comp{
+    padding-right: 2rem;
+}
+
+.msg-container{
+    font-size: 2rem;
+    background-color: #48435C;
+    font-size: 2rem;
+    margin-top: 5rem;
+    display: inline-block;
+    border-radius: 1.5rem;
+    height: 4rem;
+    width: auto;
+    color: white;
+    line-height: 3.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+button{
+    color: #48435C;
+    background-color: white;
+    border: 0.5rem solid ;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+
+@media only screen and (max-width: 768px){
+    .choice{
+        background-size: 100% auto;
+    }
+}
